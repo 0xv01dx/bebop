@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const url = 'http://localhost:8080';
+export const url = 'http://0xv01dx.github.io:8080';
 
 export default axios.create({
   baseURL: `${url}/api/v1`,
