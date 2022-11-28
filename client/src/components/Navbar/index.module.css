@@ -1,0 +1,120 @@
+.component {
+  max-width: 250px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* only twitter bird */
+.component > nav > svg {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  padding: 4px;
+}
+
+.component > nav > button {
+  width: 42px;
+  height: 42px;
+}
+
+.selected {
+  color: var(--twitterBlue) !important;
+  fill: var(--twitterBlue) !important;
+}
+
+.link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 42px;
+  cursor: pointer;
+}
+
+.link > svg {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+}
+
+.link > span {
+  display: none;
+}
+
+.link:hover,
+.link:active {
+  background-color: var(--twitterBlueSoft);
+  color: var(--twitterBlue);
+  fill: var(--twitterBlue);
+}
+
+.chip {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px;
+  border-radius: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.chip > div,
+.chip span,
+.chip p {
+  display: none;
+}
+.chip:hover,
+.chip:active {
+  background-color: var(--twitterBlueSoft);
+}
+
+/*
+  Large Devices, Wide Screens
+*/
+@media only screen and (min-width: 1200px) {
+  /* expand nav */
+
+  .component {
+    width: 100%;
+  }
+
+  .component > nav > button {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: stretch;
+    height: 100%;
+  }
+
+  .link > span {
+    display: inline;
+    margin: 0 12px;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  .chip {
+    width: 95%;
+    margin: 5px;
+  }
+  .chip > div {
+    display: block;
+    flex: 0.9;
+  }
+  .chip span {
+    display: block;
+    font-weight: 700;
+  }
+  .chip p {
+    display: block;
+    color: #808080;
+  }
+}
