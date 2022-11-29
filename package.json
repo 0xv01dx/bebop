@@ -1,0 +1,20 @@
+{
+  "name": "mern-twitter-clone-main",
+  "version": "1.0.0",
+  "description": "- **M** = [MongoDB](https://www.mongodb.com) - **E** = [Express.js](https://expressjs.com) - **R** = [React.js](https://reactjs.org) - **N** = [Node.js](https://nodejs.org)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xv01dx/bebop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xv01dx/bebop/issues"
+  },
+  "homepage": "https://github.com/0xv01dx/bebop#readme"
+}
