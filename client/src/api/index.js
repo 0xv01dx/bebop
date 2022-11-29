@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const url = 'http://0xv01dx.github.io:8080';
+export const url = 'https://bebop-clone.herokuapp.com:8080';
 
 export default axios.create({
   baseURL: `${url}/api/v1`,
